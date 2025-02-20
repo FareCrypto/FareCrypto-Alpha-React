@@ -1,0 +1,131 @@
+.elemstgld-container {
+  width: 100%;
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  max-height: 6vh;
+  overflow-y: hidden;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+}
+ 
+.elemstgld-text1 {
+  flex: 1;
+  display: flex;
+  padding: 1vh;
+  min-height: 6vh;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+ 
+.elemstgld-text2 {
+  flex: 1;
+  display: flex;
+  padding: 1vh;
+  font-style: normal;
+  min-height: 6vh;
+  text-align: center;
+  align-items: center;
+  font-weight: 500;
+  justify-content: center;
+}
+ 
+.elemstgld-text3 {
+  flex: 1;
+  display: flex;
+  padding: 1vh;
+  font-style: normal;
+  min-height: 6vh;
+  text-align: center;
+  align-items: center;
+  font-weight: 500;
+  justify-content: center;
+}
+ 
+.elemstgld-text4 {
+  flex: 1;
+  display: flex;
+  padding: 1vh;
+  font-style: normal;
+  min-height: 6vh;
+  text-align: center;
+  align-items: center;
+  font-weight: 500;
+  justify-content: center;
+}
+ 
+.elemstgld-text5 {
+  flex: 1;
+  display: flex;
+  padding: 1vh;
+  font-style: normal;
+  min-height: 6vh;
+  text-align: center;
+  align-items: center;
+  font-weight: 500;
+  justify-content: center;
+}
+ 
+.elemstgld-text6 {
+  flex: 1;
+  display: flex;
+  padding: 1vh;
+  font-style: normal;
+  min-height: 6vh;
+  text-align: center;
+  align-items: center;
+  font-weight: 500;
+  justify-content: center;
+}
+ 
+.elemstgld-text7 {
+  flex: 1;
+  display: flex;
+  padding: 1vh;
+  font-style: normal;
+  min-height: 6vh;
+  text-align: center;
+  align-items: center;
+  font-weight: 300;
+  justify-content: center;
+}
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+

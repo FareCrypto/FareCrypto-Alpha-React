@@ -1,0 +1,55 @@
+.cookies-modal-container1 {
+  width: 100vw;
+  cursor: not-allowed;
+  height: 100vh;
+  display: none;
+  z-index: 9999;
+  align-items: center;
+  user-select: none;
+  pointer-events: none;
+  justify-content: center;
+  background-color: rgba(217, 217, 217, 0.5);
+}
+ 
+.cookies-modal-container2 {
+  animation-name: fadeIn;
+  animation-delay: 0s;
+  animation-duration: 2s;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+}
+ 
+.cookies-modal-text10 {
+  align-self: center;
+  text-decoration: underline #33b5e5;
+}
+ 
+.cookies-modal-link {
+  text-decoration: underline;
+}
+ 
+.cookies-modal-button1 {
+  align-self: stretch;
+}
+ 
+.cookies-modal-button2 {
+  align-self: stretch;
+}
+ 
+.cookies-modal-text15 {
+  align-self: center;
+  text-align: center;
+}
+ 
+.cookies-modal-container4 {
+  top: NaNpx;
+  left: NaNpx;
+  position: absolute;
+}
+ 
+.cookies-modal-container5 {
+  display: contents;
+}
+ 
+

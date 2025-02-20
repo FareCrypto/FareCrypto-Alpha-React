@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+
+<html lang="it">
+  <head>
+    <title>FareCrypto.net</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;  -webkit-font-smoothing: antialiased;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;  color: inherit;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}details {  display: block;  margin: 0;  padding: 0;}summary::-webkit-details-marker {  display: none;}[data-thq="accordion"] [data-thq="accordion-content"] {  max-height: 0;  overflow: hidden;  transition: max-height 0.3s ease-in-out;  padding: 0;}[data-thq="accordion"] details[data-thq="accordion-trigger"][open] + [data-thq="accordion-content"] {  max-height: 1000vh;}details[data-thq="accordion-trigger"][open] summary [data-thq="accordion-icon"] {  transform: rotate(180deg);}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: "Roboto";
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: 0.5;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background: var(--dl-color-gray-white);
+
+        fill: var(--dl-color-gray-black);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="/copia di logofcb - copia.png"
+      type="icon/png"
+      sizes="32x32"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-VZTL67W4EE"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-VZTL67W4EE");
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const cookiesAccepted = getCookie("cookiesAccepted");
+
+        if (cookiesAccepted === "true") {
+          hideCookiesModal();
+        } else {
+          showCookiesModal();
+        }
+      });
+
+      document
+        .getElementById("cookiesAcceptAll")
+        .addEventListener("click", function () {
+          setCookie("cookiesAccepted", "true", 30);
+          setCookie("disclaimerAccepted", "true", 0); // Temporary cookie
+
+          hideButtonsAndShowMessage("Cookies accepted!", "green");
+          hideCookiesModalWithDelay();
+        });
+
+      document
+        .getElementById("cookiesRefuse")
+        .addEventListener("click", function () {
+          setCookie("disclaimerAccepted", "true", 0); // Temporary cookie
+
+          hideButtonsAndShowMessage("Cookies refused.", "red");
+          hideCookiesModalWithDelay();
+        });
+
+      function hideButtonsAndShowMessage(message, color) {
+        const buttonsContainer = document.getElementById("cModal-BtnBox");
+        const acceptButton = document.getElementById("cookiesAcceptAll");
+        const refuseButton = document.getElementById("cookiesRefuse");
+
+        acceptButton.style.display = "none";
+        refuseButton.style.display = "none";
+
+        const messageSpan = document.createElement("span");
+        messageSpan.textContent = message;
+        messageSpan.classList.add("FLX_txt_med_small-2");
+        messageSpan.style.color = color;
+
+        buttonsContainer.appendChild(messageSpan);
+      }
+
+      function hideCookiesModal() {
+        document.getElementById("cookiesModalScreen").style.display = "none";
+      }
+
+      function showCookiesModal() {
+        document.getElementById("cookiesModalScreen").style.display = "flex";
+      }
+
+      function setCookie(name, value, days) {
+        const expires = new Date();
+        expires.setTime(expires.getTime() + days * 24 * 60 * 60 * 1000);
+        document.cookie = `${name}=${value};expires=${expires.toUTCString()};path=/`;
+      }
+
+      function getCookie(name) {
+        const cookies = document.cookie.split("; ");
+        for (const cookie of cookies) {
+          const [cookieName, cookieValue] = cookie.split("=");
+          if (cookieName === name) {
+            return cookieValue;
+          }
+        }
+        return "";
+      }
+
+      function hideCookiesModalWithDelay() {
+        const cookiesModalContent = document.getElementById("cookiesModalScreen");
+        setTimeout(() => {
+          cookiesModalContent.style.opacity = 0;
+          setTimeout(() => {
+            hideCookiesModal();
+          }, 1000);
+        }, 2000);
+      }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!-- <style> ... </style> -->
+    <style data-section-id="dropdown">
+      [data-thq="thq-dropdown"]:hover > [data-thq="thq-dropdown-list"] {
+        display: flex;
+      }
+
+      [data-thq="thq-dropdown"]:hover > div [data-thq="thq-dropdown-arrow"] {
+        transform: rotate(90deg);
+      }
+    </style>
+    <style>
+      ::-webkit-scrollbar {
+        width: 0px;
+        height: 3px;
+        position: fixed;
+        z-index: 0;
+        transition: 0.3s;
+      }
+      ::-webkit-scrollbar-track {
+        width: 0px;
+        height: 3px;
+        background: gray;
+      }
+      ::-webkit-scrollbar-track:hover {
+        width: 0px;
+        height: 3px;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #33b5e5;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        opacity: 0;
+      }
+    </style>
+    <script>
+      let C = 100; // Valore predefinito per G = 1
+      let T = 5; // Valore predefinito per G = 1
+      let TL = 0.1; // Valore predefinito per G = 1
+      let G = 1; // Aggiunto G come variabile globale
+      let CE = 0; // Variabile per il livello extra
+      let CT = 100; // Conteggio totale
+      let H = 0; // Variabile per il conteggio anni
+
+      function impostaLimitiAPR_I() {
+        G =
+          parseFloat(document.querySelector('input[name="G"]:checked').value) || 1;
+        switch (G) {
+          case 1:
+            C = 100;
+            T = 5;
+            TL = 0.1;
+            impostaLimitiAPR_IInput(10, 10, 10); // Valore predefinito per G = 1
+            break;
+          case 2:
+            C = 1000;
+            T = 4.5;
+            TL = 0.12;
+            impostaLimitiAPR_IInput(30, 30, 30); // Valore predefinito per G = 2
+            break;
+          case 3:
+            C = 10000;
+            T = 4;
+            TL = 0.15;
+            impostaLimitiAPR_IInput(70, 70, 70); // Valore predefinito per G = 3
+            break;
+          default:
+            C = 100;
+            T = 5;
+            TL = 0.1;
+            impostaLimitiAPR_IInput(0, 100, 0); // Valore predefinito generico
+        }
+        calcolaAPR();
+      }
+
+      function impostaLimitiAPR_IInput(min, max, value) {
+        const APR_IInput = document.getElementById("APR_I");
+        APR_IInput.min = min;
+        APR_IInput.max = max;
+        APR_IInput.value = value;
+        calcolaAPR();
+      }
+
+      function calcolaAPR() {
+        const APR_I = parseFloat(document.getElementById("APR_I").value) || 0;
+        const L =
+          parseFloat(document.getElementById("livelloValue").innerText) || 0; // Modificato per prendere il valore dalla span
+        const P = parseFloat(document.getElementById("P").value) || 1;
+
+        const APR_E = APR_I + G * L;
+
+        let APR_F;
+        switch (P) {
+          case 1:
+            APR_F = APR_E * 1;
+            break;
+          case 2:
+            APR_F = APR_E * 0.83;
+            break;
+          case 3:
+            APR_F = APR_E * 0.66;
+            break;
+          case 4:
+            APR_F = APR_E * 0.49;
+            break;
+          case 6:
+            APR_F = APR_E * 0.32;
+            break;
+          case 12:
+            APR_F = APR_E * 0.15;
+            break;
+          default:
+            APR_F = APR_E;
+        }
+
+        // Aggiunto calcolo del livello extra
+        const LE = 10000 * CE;
+
+        // Calcolo di R modificato
+        const R = (C / 100) * APR_F * (L + 1) + (LE / 100) * APR_F;
+
+        // Limita a massimo 2 cifre decimali
+        APR_F = parseFloat(APR_F.toFixed(2));
+
+        // Converte in numero intero se i decimali sono zero
+        if (APR_F % 1 === 0) {
+          APR_F = Math.round(APR_F);
+        }
+
+        // Visualizza il risultato APR_F
+        document.getElementById("risultatoAPR_F").innerText = `${APR_F}%`;
+
+        // Calcola e formatta il risultato C dinamicamente
+        const risultatoC = C * (L + 1);
+        const formattedC = risultatoC.toLocaleString();
+        document.getElementById("risultatoC").innerText = `${formattedC} USDT`;
+
+        // Calcola e formatta il risultato CT dinamicamente
+        const risultatoCT = C * (L + 1) + LE;
+        const formattedCT = risultatoCT.toLocaleString();
+        document.getElementById("risultatoCT").innerText = `${formattedCT} USDT`;
+
+        // Calcola e visualizza il risultato LE
+        document.getElementById(
+          "risultatoLE2"
+        ).innerText = `${LE.toLocaleString()} USDT`;
+
+        // Calcola e formatta il risultato R dinamicamente
+        const formattedR = R.toLocaleString(undefined, {
+          maximumFractionDigits: 2,
+        });
+        document.getElementById("risultatoR").innerText = `${formattedR} USDT`;
+
+        // Calcola e formatta il risultato TF dinamicamente
+        const TF = T - TL * L;
+        document.getElementById("risultatoTF").innerText = `${TF.toFixed(2)}%`;
+
+        // Calcola e formatta il risultato RF dinamicamente
+        const RF = ((R / 100) * (100 - TF)) / P;
+        const formattedRF = RF.toLocaleString(undefined, {
+          maximumFractionDigits: 2,
+        });
+        document.getElementById("risultatoRF").innerText = `${formattedRF} USDT`;
+
+        // Aggiorna dinamicamente il selettore G
+        document.querySelector(`input[name="G"][value="${G}"]`).checked = true;
+
+        // Aggiorna dinamicamente il selettore P
+        document.getElementById("P").value = P;
+
+        // Aggiorna dinamicamente lo stato dei bottoni
+        aggiornaBottoni();
+        applyTextShadow(G);
+        updateCadenzaText();
+      }
+
+      function aggiornaBottoni() {
+        const bottoneAnnoPrecedente = document.getElementById("annoPrecedente");
+        const bottoneAnnoSuccessivo = document.getElementById("annoSuccessivo");
+        const divE = document.getElementById("E");
+        const risultatoLE2 = document.getElementById("risultatoLE2");
+
+        bottoneAnnoPrecedente.disabled =
+          parseFloat(document.getElementById("livelloValue").innerText) === 0 &&
+          G === 1;
+
+        if (
+          G === 3 &&
+          parseFloat(document.getElementById("livelloValue").innerText) === 10
+        ) {
+          divE.style.display = "flex";
+          risultatoLE1.style.display = "flex";
+          risultatoLE2.style.display = "flex";
+        } else {
+          divE.style.display = "none";
+          risultatoLE1.style.display = "none";
+          risultatoLE2.style.display = "none";
+          CE = 0;
+        }
+
+        if (risultatoLE2.style.display === "block") {
+          document.getElementById("CE").innerText = CE;
+        }
+      }
+
+      function riduciLivello() {
+        let livelloValue =
+          parseFloat(document.getElementById("livelloValue").innerText) || 0;
+        if (livelloValue > 0) {
+          livelloValue--;
+        } else if (livelloValue === 0 && G !== 1) {
+          G--;
+          livelloValue = 10;
+          impostaLimitiAPR_IInput(0, 100, 0);
+          impostaLimitiAPR_I();
+        }
+        document.getElementById("livelloValue").innerText = livelloValue;
+        calcolaAPR();
+      }
+
+      function aumentaLivello() {
+        let livelloValue =
+          parseFloat(document.getElementById("livelloValue").innerText) || 0;
+        if (livelloValue < 10) {
+          livelloValue++;
+        } else if (livelloValue === 10 && G !== 3) {
+          G++;
+          livelloValue = 0;
+          impostaLimitiAPR_IInput(0, 100, 0);
+          impostaLimitiAPR_I();
+        }
+        document.getElementById("livelloValue").innerText = livelloValue;
+        calcolaAPR();
+      }
+
+      function incrementaCE() {
+        CE++;
+        document.getElementById("CE").innerText = CE;
+        calcolaAPR();
+      }
+
+      function decrementaCE() {
+        if (CE > 0) {
+          CE--;
+          document.getElementById("CE").innerText = CE;
+          calcolaAPR();
+        }
+      }
+
+      // Funzione per gestire il bottone "Anno Precedente"
+      function annoPrecedente() {
+        if (H > 0) {
+          let livelloValue =
+            parseFloat(document.getElementById("livelloValue").innerText) || 0;
+          if (CE > 0) {
+            CE--;
+            H--;
+          } else if (livelloValue > 0) {
+            livelloValue--;
+            H--;
+          } else if (livelloValue === 0 && G !== 1) {
+            G--;
+            H--;
+            livelloValue = 10;
+            impostaLimitiAPR_IInput(0, 100, 0);
+            impostaLimitiAPR_I();
+          }
+          document.getElementById("livelloValue").innerText = livelloValue;
+          calcolaAPR();
+        }
+      }
+
+      // Funzione per gestire il bottone "Anno Successivo"
+      function annoSuccessivo() {
+        let livelloValue =
+          parseFloat(document.getElementById("livelloValue").innerText) || 0;
+        if (livelloValue < 10) {
+          livelloValue++;
+          H++;
+        } else if (livelloValue === 10 && G !== 3) {
+          G++;
+          H++;
+          livelloValue = 0;
+          impostaLimitiAPR_IInput(0, 100, 0);
+          impostaLimitiAPR_I();
+        } else if (livelloValue === 10 && G === 3) {
+          CE++;
+          H++;
+        }
+        document.getElementById("livelloValue").innerText = livelloValue;
+        calcolaAPR();
+      }
+
+      //applicare qui versione 1
+      function applyTextShadow(selectedG) {
+        for (let i = 1; i <= 3; i++) {
+          const labelId = `forG${i}`;
+          const label = document.getElementById(labelId);
+
+          if (i === selectedG) {
+            label.style.textShadow = "0 0 3px #fff, 0 0 3px #fff";
+            label.style.textDecoration = "underline";
+          } else {
+            label.style.textShadow = "none";
+            label.style.textDecoration = "none";
+          }
+        }
+      }
+
+      function updateCadenzaText() {
+        var selectElement = document.getElementById("P");
+        var cadenzaElement = document.getElementById("cadenza");
+        var selectedOption = selectElement.options[selectElement.selectedIndex];
+        cadenzaElement.innerText = selectedOption.innerText;
+      }
+
+      // Esegui il calcolo iniziale
+      impostaLimitiAPR_I();
+    </script>
+
+    <style>
+      [data-thq="thq-dropdown"]:hover > [data-thq="thq-dropdown-list"] {
+          display: flex;
+        }
+
+        [data-thq="thq-dropdown"]:hover > div [data-thq="thq-dropdown-arrow"] {
+          transform: rotate(90deg);
+        }
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script
+      type="text/javascript"
+      src="https://www.googletagmanager.com/gtag/js?id=5172596991"
+      async
+    ></script>
+    <script type="text/javascript">
+      window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', '5172596991');
+    </script>
+    <script type="text/javascript">
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+              'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+              })(window,document,'script','dataLayer','G-VZTL67W4EE');
+    </script>
+    <!-- Your body code here -->
+    <!-- <script type="text/javascript"> ... </script> -->
+    <script
+      data-section-id="navbar"
+      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+    ></script>
+    <script>
+            function toggleContent(className) {
+                var elements = document.getElementsByClassName(className);
+
+                for (var i = 0; i < elements.length; i++) {
+                    var element = elements[i];
+
+                    if (element.style.display === 'none') {
+                        element.style.display = 'flex';
+                    } else {
+                        element.style.display = 'none';
+                    }
+                }
+            }
+
+
+
+      $(document).ready(function () {
+        console.log("");
+        $(".closeNotify").on("click", function () {
+          console.log($(this).closest(".notify"));
+          $(this).closest(".notify").hide();
+        });
+      });
+
+      function openNotifyBox() {
+        document.getElementById("notifyBox").style.display = "flex";
+        document.getElementById("closeNotify").style.display = "flex";
+        document.getElementById("notifyAlert").style.display = "none";
+      }
+
+      function closeNotifyBox() {
+        document.getElementById("notifyBox").style.display = "none";
+        document.getElementById("closeNotify").style.display = "none";
+      }
+
+      function notifyTypeSystem() {
+        document.getElementById("personalNotifyBox").style.display = "none";
+        document.getElementById("systemNotifyBox").style.display = "flex";
+      }
+
+      function notifyTypePersonal() {
+        document.getElementById("personalNotifyBox").style.display = "flex";
+        document.getElementById("systemNotifyBox").style.display = "none";
+      }
+
+      function closeNotify1() {
+        document.getElementById("notify1").style.display = "none";
+      }
+    </script>
+    <script
+      defer
+      src="https://unpkg.com/@teleporthq/react-components/dist/animate-on-reveal.umd.js"
+    ></script>
+  </body>
+</html>

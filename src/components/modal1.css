@@ -1,0 +1,136 @@
+.modal1-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  z-index: 9000;
+  position: absolute;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+ 
+.modal1-navbar-interactive {
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+ 
+.modal1-desktop-menu {
+  flex: 1;
+  display: none;
+  justify-content: space-between;
+}
+ 
+.modal1-burger-menu {
+  display: flex;
+}
+ 
+.modal1-mobile-menu {
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  width: 100vw;
+  bottom: 0px;
+  height: 100vh;
+  display: none;
+  z-index: 10000;
+  position: fixed;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+ 
+.modal1-nav {
+  width: 30vw;
+  height: 30vh;
+  display: flex;
+  position: relative;
+  max-width: 97vh;
+  margin-top: 3vh;
+  max-height: 89vh;
+  align-items: center;
+  margin-right: 3vh;
+  padding-left: 3vh;
+  flex-direction: column;
+  padding-bottom: 3vh;
+  justify-content: center;
+}
+ 
+.modal1-buttons {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  box-shadow: 0px 0px 10px 0px #33b5e5;
+  align-items: center;
+  border-color: var(--dl-color-scheme-blue);
+  border-width: 1px;
+  border-radius: var(--dl-radius-radius-radius16);
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--dl-color-gray-300);
+}
+ 
+.modal1-close-menu {
+  top: -3vh;
+  right: -3vh;
+  width: 3vh;
+  height: 3vh;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+}
+ 
+.modal1-icon1 {
+  width: 100%;
+  height: 100%;
+  border-color: var(--dl-color-scheme-blue);
+  border-width: 1px;
+  border-radius: var(--dl-radius-radius-round);
+}
+ 
+.modal1root-class-name {
+  top: 0px;
+  left: 0px;
+  width: auto;
+  height: auto;
+  position: static;
+}
+ 
+.modal1root-class-name1 {
+  width: auto;
+  height: auto;
+  position: static;
+  align-self: center;
+}
+ 
+@media(max-width: 1200px) {
+  .modal1-desktop-menu {
+    display: none;
+  }
+  .modal1-burger-menu {
+    display: flex;
+  }
+}
+ 
+@media(max-width: 767px) {
+  .modal1-navbar-interactive {
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+  }
+  .modal1-burger-menu {
+    align-items: center;
+    justify-content: center;
+  }
+}
+ 
+@media(max-width: 479px) {
+  .modal1-navbar-interactive {
+    padding: var(--dl-space-space-unit);
+  }
+  .modal1-mobile-menu {
+    padding: 16px;
+  }
+}

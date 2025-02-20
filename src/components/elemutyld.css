@@ -1,0 +1,96 @@
+.elemutyld-container {
+  width: 100%;
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  max-height: 6vh;
+  overflow-y: hidden;
+  align-items: center;
+  border-color: var(--dl-color-scheme-blue);
+  border-width: 0px;
+  flex-direction: row;
+  justify-content: space-around;
+  border-bottom-width: 1px;
+}
+ 
+.elemutyld-text1 {
+  flex: 1;
+  display: flex;
+  padding: 1vh;
+  min-height: 6vh;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+ 
+.elemutyld-text2 {
+  flex: 1;
+  display: flex;
+  padding: 1vh;
+  font-style: normal;
+  min-height: 6vh;
+  text-align: center;
+  align-items: center;
+  font-weight: 500;
+  justify-content: center;
+}
+ 
+.elemutyld-text3 {
+  flex: 1;
+  display: flex;
+  padding: 1vh;
+  font-style: normal;
+  min-height: 6vh;
+  text-align: center;
+  align-items: center;
+  font-weight: 500;
+  justify-content: center;
+}
+ 
+.elemutyld-text4 {
+  flex: 1;
+  display: flex;
+  padding: 1vh;
+  font-style: normal;
+  min-height: 6vh;
+  text-align: center;
+  align-items: center;
+  font-weight: 500;
+  justify-content: center;
+}
+ 
+.elemutyld-text5 {
+  flex: 1;
+  display: flex;
+  padding: 1vh;
+  font-style: normal;
+  min-height: 6vh;
+  text-align: center;
+  align-items: center;
+  font-weight: 500;
+  justify-content: center;
+}
+ 
+.elemutyld-text6 {
+  flex: 1;
+  display: flex;
+  padding: 1vh;
+  font-style: normal;
+  min-height: 6vh;
+  text-align: center;
+  align-items: center;
+  font-weight: 500;
+  justify-content: center;
+}
+ 
+.elemutyld-text7 {
+  flex: 1;
+  display: flex;
+  padding: 1vh;
+  font-style: normal;
+  min-height: 6vh;
+  text-align: center;
+  align-items: center;
+  font-weight: 300;
+  justify-content: center;
+}

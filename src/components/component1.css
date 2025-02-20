@@ -1,0 +1,18 @@
+.component1-container1 {
+  display: flex;
+  position: relative;
+}
+ 
+.component1-container2 {
+  flex: 1;
+  display: flex;
+  min-width: 100%;
+  align-self: center;
+  min-height: auto;
+  align-items: center;
+  justify-content: center;
+}
+ 
+.component1-container3 {
+  display: contents;
+}

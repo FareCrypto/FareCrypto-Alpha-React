@@ -1,0 +1,123 @@
+.patchnotes-container1 {
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  align-items: center;
+  padding-top: 1rem;
+  border-color: var(--dl-color-scheme-blue);
+  border-width: 2px;
+  border-radius: var(--dl-radius-radius-radius16);
+  flex-direction: column;
+  padding-bottom: 1rem;
+  justify-content: flex-start;
+  background-color: rgba(153, 153, 153, 0.8);
+}
+ 
+.patchnotes-text1 {
+  color: var(--dl-color-scheme-white1);
+  text-shadow: 0 0 4px #33b5e5, 0 0 4px #33b5e5;
+  margin-bottom: 0.5rem;
+}
+ 
+.patchnotes-container2 {
+  display: flex;
+  flex-wrap: wrap;
+  align-self: stretch;
+  align-items: flex-start;
+  border-color: var(--dl-color-scheme-white);
+  border-width: 2px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  flex-direction: row;
+  padding-bottom: 0.5rem;
+  justify-content: flex-start;
+  border-top-width: 0px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+}
+ 
+.patchnotes-container3 {
+  display: flex;
+  align-self: center;
+  align-items: center;
+  border-color: var(--dl-color-scheme-blue);
+  border-width: 1px;
+  flex-direction: row;
+  justify-content: flex-start;
+  border-top-width: 0px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+}
+ 
+.patchnotes-text2 {
+  align-self: flex-start;
+  text-shadow: 0 0 2px #000, 0 0 2px #000;
+  padding-right: 0.5rem;
+}
+ 
+.patchnotes-text3 {
+  align-self: flex-start;
+  text-shadow: 0 0 2px #000, 0 0 2px #000;
+}
+ 
+.patchnotes-text4 {
+  align-self: flex-start;
+  text-shadow: 0 0 2px #000, 0 0 2px #000;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+ 
+.patchnotes-text5 {
+  color: var(--dl-color-scheme-gold);
+  align-self: flex-start;
+  text-shadow: 0 0 1px #000, 0 0 1px #000;
+}
+ 
+.patchnotes-text6 {
+  align-self: flex-start;
+  text-shadow: 0 0 2px #000, 0 0 2px #000;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+ 
+.patchnotes-text7 {
+  align-self: flex-start;
+  text-shadow: 0 0 2px #000, 0 0 2px #000;
+}
+ 
+.patchnotesroot-class-name {
+  width: auto;
+  align-self: stretch;
+}
+ 
+.patchnotesroot-class-name1 {
+  width: auto;
+  align-self: stretch;
+}
+ 
+.patchnotesroot-class-name2 {
+  width: auto;
+  align-self: stretch;
+}
+ 
+.patchnotesroot-class-name3 {
+  width: auto;
+  align-self: stretch;
+}
+ 
+.patchnotesroot-class-name4 {
+  width: auto;
+  align-self: stretch;
+}
+ 
+.patchnotesroot-class-name5 {
+  width: auto;
+  align-self: stretch;
+}
+ 
+.patchnotesroot-class-name6 {
+  width: auto;
+  align-self: stretch;
+}

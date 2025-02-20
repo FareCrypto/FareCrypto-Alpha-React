@@ -1,0 +1,117 @@
+.c4-fcinside-services-container1 {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+ 
+.c4-fcinside-services-container3 {
+  flex: 1;
+  height: 92vh;
+  display: flex;
+  align-self: stretch;
+  min-height: 92vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+ 
+.c4-fcinside-services-container4 {
+  width: 100%;
+  margin: 5vh;
+  align-self: center;
+  align-items: center;
+}
+ 
+.c4-fcinside-services-container5 {
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  margin-top: -3vh;
+  align-items: flex-start;
+  padding-top: 5vh;
+  justify-content: center;
+}
+ 
+.c4-fcinside-services-text1 {
+  align-self: flex-start;
+  text-align: center;
+  line-height: 0.8;
+  text-shadow: 0 0 5px #33b5e5, 0 0 5px #33b5e5;
+}
+ 
+.c4-fcinside-services-container6 {
+  height: auto;
+  display: flex;
+  padding: 3vh;
+  margin-top: 5vh;
+  max-height: 70vh;
+  min-height: 12vh;
+  align-items: center;
+  border-width: 0px;
+  flex-direction: row;
+  justify-content: center;
+}
+ 
+.c4-fcinside-services-container7 {
+  width: 10vh;
+  height: 10vh;
+  display: flex;
+  position: relative;
+  align-items: flex-end;
+  margin-left: -2vh;
+  flex-direction: column;
+}
+ 
+.c4-fcinside-services-icon1 {
+  top: 0px;
+  fill: rgba(51, 181, 229, 0.8);
+  left: 0px;
+  right: 0px;
+  width: 10vh;
+  bottom: 0px;
+  height: 10vh;
+  margin: auto;
+  position: absolute;
+}
+ 
+.c4-fcinside-services-icon3 {
+  top: 0px;
+  fill: rgba(255, 255, 255, 0.8);
+  left: 0px;
+  right: 0px;
+  width: 10vh;
+  bottom: 0px;
+  height: 10vh;
+  margin: auto;
+  position: absolute;
+}
+ 
+.c4-fcinside-services-text2 {
+  align-self: center;
+  text-align: left;
+  margin-left: 2vh;
+}
+ 
+.c4-fcinside-services-text3 {
+  color: var(--dl-color-scheme-blue);
+}
+ 
+.c4-fcinside-services-container8 {
+  top: -Infinitypx;
+  left: -Infinitypx;
+  position: absolute;
+}
+ 
+.c4-fcinside-services-container9 {
+  display: contents;
+}
+ 
+.c4-fcinside-services-text5 {
+  max-width: 800px;
+  margin-top: 2vh;
+  text-align: center;
+}

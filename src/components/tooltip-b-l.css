@@ -1,0 +1,131 @@
+.tooltip-b-l-container {
+  display: flex;
+  position: relative;
+}
+ 
+.tooltip-b-l-thq-dropdown {
+  width: auto;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+}
+ 
+.tooltip-b-l-dropdown-toggle1 {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+}
+ 
+.tooltip-b-l-icon1 {
+  fill: var(--dl-color-scheme-blue);
+  width: 22px;
+  height: 22px;
+  align-self: center;
+}
+ 
+.tooltip-b-l-dropdown-list {
+  right: 0px;
+  width: max-content;
+  display: none;
+  z-index: 1000;
+  position: absolute;
+  min-width: 100%;
+  align-items: stretch;
+  flex-direction: column;
+  list-style-type: none;
+  list-style-position: inside;
+}
+ 
+.tooltip-b-l-dropdown {
+  display: inline-block;
+  position: relative;
+}
+ 
+.tooltip-b-l-text1 {
+  color: var(--dl-color-gray-black);
+  animation: fadeIn 1s alternate;
+  max-width: 400px;
+  align-self: stretch;
+  text-align: right;
+  line-height: 1;
+}
+ 
+.tooltip-b-l-text2 {
+  color: rgba(0, 0, 0, 0);
+  animation: fadeIn 1s alternate;
+  max-width: 400px;
+  align-self: stretch;
+  text-align: center;
+  line-height: 0.5;
+}
+ 
+.tooltip-b-l-text3 {
+  color: var(--dl-color-gray-black);
+  animation: fadeIn 1s alternate;
+  max-width: 400px;
+  align-self: stretch;
+  text-align: right;
+  line-height: 1;
+}
+ 
+.tooltip-b-l-text4 {
+  color: rgba(0, 0, 0, 0);
+  animation: fadeIn 1s alternate;
+  max-width: 400px;
+  align-self: stretch;
+  text-align: center;
+  line-height: 0.5;
+}
+ 
+.tooltip-b-l-text5 {
+  color: var(--dl-color-gray-black);
+  animation: fadeIn 1s alternate;
+  max-width: 400px;
+  align-self: stretch;
+  text-align: right;
+  line-height: 1;
+}
+ 
+.tooltip-b-l-text6 {
+  color: rgba(0, 0, 0, 0);
+  animation: fadeIn 1s alternate;
+  max-width: 400px;
+  align-self: stretch;
+  text-align: center;
+  line-height: 0.5;
+  animation-delay: 0.2s;
+}
+ 
+.tooltip-b-l-text7 {
+  color: var(--dl-color-gray-black);
+  animation: fadeIn 1s alternate;
+  max-width: 400px;
+  align-self: stretch;
+  text-align: right;
+  line-height: 1;
+  animation-delay: 0.2s;
+}
+ 
+.tooltip-b-l-text8 {
+  color: rgba(0, 0, 0, 0);
+  animation: fadeIn 1s alternate;
+  max-width: 400px;
+  align-self: stretch;
+  text-align: center;
+  line-height: 0.5;
+  animation-delay: 0.2s;
+}
+ 
+.tooltip-b-l-text9 {
+  color: var(--dl-color-gray-black);
+  animation: fadeIn 1s alternate;
+  max-width: 400px;
+  align-self: stretch;
+  text-align: right;
+  line-height: 1;
+  animation-delay: 0.4s;
+}
+ 
+.tooltip-b-lroot-class-name {
+  align-self: center;
+}
